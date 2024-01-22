@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg">
+
+
+    <RelativeLayout
+        android:id="@+id/stylishBox"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_box_with_border"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/quoteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Press 'Generate Quote' Button"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="35dp"
+        android:text="Quotes"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Quote"
+        android:layout_below="@+id/stylishBox"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF8F00"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/addToFavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Favorites"
+        android:drawableEnd="@drawable/favorite"
+        android:layout_below="@+id/generateButton"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF8F00"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Quote"
+        android:drawableEnd="@drawable/shareit"
+        android:layout_below="@+id/addToFavoritesButton"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF8F00"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Button to View Favorite Quotes -->
+    <Button
+        android:id="@+id/viewFavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Favorites"
+        android:drawableEnd="@drawable/favorite"
+        android:layout_below="@+id/shareButton"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF8F00"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

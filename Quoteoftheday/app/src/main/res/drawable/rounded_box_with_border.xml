@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Adjust the radius as needed -->
+            <solid android:color="#FFFFFF" /> <!-- Background color of the box -->
+        </shape>
+    </item>
+
+    <!-- Border -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Adjust the radius to match the background shape -->
+            <stroke android:color="#02A7BD" android:width="5dp" /> <!-- Border color and width -->
+        </shape>
+    </item>
+
+</layer-list>
